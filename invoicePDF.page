@@ -1,0 +1,10 @@
+
+<apex:page standardcontroller="Invoice__c" extensions="PDFcreator" renderAs="pdf">
+<apex:pageBlock title="Line Items">
+<apex:pageBlockTable value="{!lines}" var="a">
+<p><apex:column value="{!a.Name}" width="200px;"/></p>
+<p><apex:column value="{!a.RecordTypeId}" width="200px;"/></p>
+<p><apex:column value="{!a.Amount__c}" width="200px;"/></p>
+</apex:pageBlockTable>
+</apex:pageBlock >
+</apex:page>
